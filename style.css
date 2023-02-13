@@ -1,0 +1,176 @@
+body{
+    background-color: black;
+}
+
+
+.ballYellow{
+    border:solid yellow;
+    height:90px;
+    width:90px;
+    border-radius:50%;
+    background-color: yellow;
+/* to create an animation */
+    animation: runZigZag 15s ease-in infinite;
+    position:absolute;
+}
+
+.ballRed{
+    border:solid red;
+    height:90px;
+    width:90px;
+    border-radius:50%;
+    background-color: red;
+/* to create an animation */
+    animation: runDown 10s ease-in infinite;
+    position:absolute;
+}
+
+.ballBlue{
+    border:solid blue;
+    height:90px;
+    width:90px;
+    border-radius:50%;
+    background-color: blue;
+/* to create an animation */
+    animation: runRight 12s ease-in infinite;
+    position:absolute;
+}
+
+.ballPurple{
+    border:solid purple;
+    height:90px;
+    width:90px;
+    border-radius:50%;
+    background-color:purple;
+/* to create an animation */
+    animation: runUp 10s ease-in infinite;
+    position:absolute;
+}
+
+.ballPink{
+    border:solid pink;
+    height:90px;
+    width:90px;
+    border-radius:50%;
+    background-color: pink;
+/* to create an animation */
+    animation: runLeft 12s ease-in infinite;
+    position:absolute;
+}
+
+
+
+/* Key Frames */
+
+@keyframes runLeft {
+    0%{
+        margin-left:0%;
+    }
+    10%{
+        margin-top:40%;
+    }
+    20%{
+        margin-top:0%;
+
+    }
+    50%{
+        margin-left:100%;
+        
+    }
+    100%{
+        margin-left:0%;
+    }
+  }
+
+  @keyframes falling {
+    0%{
+        
+        margin-top:0%;
+    }
+    50%{
+        margin-top:60%;
+        
+    }
+    100%{
+        margin-top:0%;
+    }
+  }
+
+  @keyframes runRight{
+    0%{
+        margin-left:0%;
+    }
+    10%{
+        margin-top:40%;
+    }
+    20%{
+        margin-top:0%;
+
+    }
+    50%{
+        margin-left:60%;
+        
+    }
+    100%{
+        margin-left:0%;
+    }
+  }
+  @keyframes runUp {
+    0%{
+        margin-left:0%;
+    }
+    10%{
+        margin-top:40%;
+    }
+    20%{
+        margin-top:0%;
+
+    }
+    50%{
+        margin-left:100%;
+        
+    }
+    100%{
+        margin-left:0%;
+    }
+  }
+
+  @keyframes runDown {
+    0%{
+        margin-left:0%;
+    }
+    10%{
+        margin-top:40%;
+    }
+    20%{
+        margin-top:0%;
+
+    }
+    50%{
+        margin-left:40%;
+        
+    }
+    100%{
+        margin-left:0%;
+    }
+  }
+
+  @keyframes runZigZag {
+    0%{
+        margin-left:0%;
+    }
+    10%{
+        margin-top:40%;
+    }
+    20%{
+        margin-top:0%;
+
+    }
+    50%{
+        margin-left:100%;
+        
+    }
+    100%{
+        margin-left:0%;
+    }
+  }
